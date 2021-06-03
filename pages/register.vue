@@ -86,7 +86,7 @@
                 name: '',
                 email: '',
                 pass: '',
-                role: ''
+                role: 'user'
             },
             
             nameRules: [

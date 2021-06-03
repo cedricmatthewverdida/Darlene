@@ -2,36 +2,36 @@
   {
     "name": "analytics",
     "path": "/analytics",
-    "component": "D:\\\\github\\\\Forecast\\\\nuxt\\\\pages\\\\analytics.vue",
+    "component": "D:\\\\github\\\\Darlene\\\\pages\\\\analytics.vue",
     "chunkName": "pages/analytics",
-    "_name": "_46b5c347"
+    "_name": "_b73ba960"
   },
   {
     "name": "dashboard",
     "path": "/dashboard",
-    "component": "D:\\\\github\\\\Forecast\\\\nuxt\\\\pages\\\\dashboard.vue",
+    "component": "D:\\\\github\\\\Darlene\\\\pages\\\\dashboard.vue",
     "chunkName": "pages/dashboard",
-    "_name": "_6d2fdb55"
+    "_name": "_6a477944"
   },
   {
     "name": "forecast",
     "path": "/forecast",
-    "component": "D:\\\\github\\\\Forecast\\\\nuxt\\\\pages\\\\forecast.vue",
+    "component": "D:\\\\github\\\\Darlene\\\\pages\\\\forecast.vue",
     "chunkName": "pages/forecast",
-    "_name": "_5475946c"
+    "_name": "_0a5728a1"
   },
   {
     "name": "register",
     "path": "/register",
-    "component": "D:\\\\github\\\\Forecast\\\\nuxt\\\\pages\\\\register.vue",
+    "component": "D:\\\\github\\\\Darlene\\\\pages\\\\register.vue",
     "chunkName": "pages/register",
-    "_name": "_f385f31c"
+    "_name": "_8a620d6e"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "D:\\\\github\\\\Forecast\\\\nuxt\\\\pages\\\\index.vue",
+    "component": "D:\\\\github\\\\Darlene\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_5b1f4713"
+    "_name": "_134b1b9c"
   }
 ]
