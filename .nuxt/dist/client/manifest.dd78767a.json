@@ -1,0 +1,9 @@
+{
+  "name": "forecast",
+  "short_name": "forecast",
+  "icons": [],
+  "start_url": "/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "lang": "en"
+}

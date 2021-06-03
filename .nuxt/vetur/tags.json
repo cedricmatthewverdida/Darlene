@@ -1,0 +1,23 @@
+{
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "RegisterAuthForm": {
+    "description": "Auto imported from components/RegisterAuthForm.vue"
+  },
+  "TheSnackbar": {
+    "description": "Auto imported from components/TheSnackbar.vue"
+  },
+  "Tweets": {
+    "description": "Auto imported from components/tweets.vue"
+  },
+  "UserAuthForm": {
+    "description": "Auto imported from components/UserAuthForm.vue"
+  },
+  "UserInfo": {
+    "description": "Auto imported from components/userInfo.vue"
+  },
+  "VuetifyLogo": {
+    "description": "Auto imported from components/VuetifyLogo.vue"
+  }
+}

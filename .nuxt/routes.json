@@ -1,0 +1,37 @@
+[
+  {
+    "name": "analytics",
+    "path": "/analytics",
+    "component": "D:\\\\github\\\\Forecast\\\\nuxt\\\\pages\\\\analytics.vue",
+    "chunkName": "pages/analytics",
+    "_name": "_46b5c347"
+  },
+  {
+    "name": "dashboard",
+    "path": "/dashboard",
+    "component": "D:\\\\github\\\\Forecast\\\\nuxt\\\\pages\\\\dashboard.vue",
+    "chunkName": "pages/dashboard",
+    "_name": "_6d2fdb55"
+  },
+  {
+    "name": "forecast",
+    "path": "/forecast",
+    "component": "D:\\\\github\\\\Forecast\\\\nuxt\\\\pages\\\\forecast.vue",
+    "chunkName": "pages/forecast",
+    "_name": "_5475946c"
+  },
+  {
+    "name": "register",
+    "path": "/register",
+    "component": "D:\\\\github\\\\Forecast\\\\nuxt\\\\pages\\\\register.vue",
+    "chunkName": "pages/register",
+    "_name": "_f385f31c"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "D:\\\\github\\\\Forecast\\\\nuxt\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_5b1f4713"
+  }
+]
