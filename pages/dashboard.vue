@@ -92,7 +92,7 @@
                     :lazy-src="tweet.imageUrl">
                     </v-img>
                   </v-avatar>
-                  <div class="pa-3 caption">@{{tweet.name}}</div>
+                  <div class="pa-3 caption">@{{tweet.name}}/</div>
                 </v-sheet>
 
                 <v-sheet
