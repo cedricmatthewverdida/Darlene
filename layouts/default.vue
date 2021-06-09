@@ -73,6 +73,7 @@
           router
           exact
           v-if="$auth.loggedIn"
+          @click="LogOut"
         >
           <v-list-item-action>
             <v-icon>mdi-logout</v-icon>
@@ -117,12 +118,31 @@
         <nuxt />
       </v-container>
     </v-main>
-    <v-footer
-      :absolute="!fixed"
-      app
-    >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+
+
+
+
+
+      <v-footer
+          :absolute="!fixed"
+          app
+          padless
+        >
+          <v-card
+            class="flex"
+            flat
+            tile
+          >
+
+      <v-card-text class="py-2 text-center">
+        A Crisis Information Dashboard
+        System using Feedback-based Test Classification of
+        Real-Time Typhoon-Related Tweets in the Philippines
+      </v-card-text>
+    </v-card>
+  </v-footer>
+
+
    
   </v-app>
 </template>
@@ -137,6 +157,12 @@ export default {
   },
   data () {
     return {
+      icons: [
+        'mdi-facebook',
+        'mdi-twitter',
+        'mdi-linkedin',
+        'mdi-instagram',
+      ],
       lat: undefined,
       long: undefined,
       location:[],
@@ -178,6 +204,10 @@ export default {
     },
     themes(){
       return this.$vuetify.theme.dark;
+    },
+    LogOut() {
+      this.$auth.logout();
+      this.$router.push('/')
     },
     async getUserForecast (){
             this.loading = true;

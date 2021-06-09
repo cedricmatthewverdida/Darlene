@@ -6,7 +6,7 @@
         <v-list-item
           router
           exact
-          @click="dialog2 = true"
+          @click="loadInfo"
           v-if="$auth.loggedIn"
         >
           <v-list-item-action>
@@ -191,6 +191,12 @@
       }
     },
     methods: {
+        loadInfo: function (){
+            this.dialog2 = true;
+            if(this.$auth.loggedIn){
+                this.AccountName = this.$auth.user[0].logs[0].user_name
+            }
+        },
         async updateName(){
 
                 this.updatingName = true;
@@ -246,10 +252,5 @@
             return this.Password != '' ? false : true;
         }
     },
-    mounted(){
-        if(this.$auth.loggedIn){
-            this.AccountName = this.$auth.user[0].logs[0].user_name
-        }
-    }
   }
 </script>

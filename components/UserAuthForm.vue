@@ -11,6 +11,7 @@
                           label="E-mail"
                           required
                           outlined
+                          rounded
                         ></v-text-field>
 
                         <v-text-field
@@ -19,6 +20,7 @@
                           label="Password"
                           required
                           outlined
+                          rounded
                           :type="passwordType ? 'text' : 'password'"
                           :append-icon="passwordType ? 'mdi-eye' : 'mdi-eye-off'"
                           @click:append="passwordType = !passwordType"
@@ -27,9 +29,9 @@
                         
                     <v-btn
                     block
-                    class="mt-1"
                     color="primary"
                     large
+                    rounded
                     @click="submitForm(userInfo)"
                     :disabled="!valid"
                     >

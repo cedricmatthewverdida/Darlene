@@ -163,5 +163,72 @@ router.get("/verify",Authorization, async(req,res)=>{
 })
 
 
+router.post("/tweetsave", async (req, res) => {
+
+  const { id, tweets } = req.body;
+
+  try {
+
+
+    let createJSON = await connection.query(
+      "INSERT INTO datasave (user_id,saves) VALUES($1,$2) RETURNING *",
+      [id,JSON.stringify(tweets)]
+    );
+
+    return res.json({createJSON});
+  
+
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server error");
+  }
+});
+
+
+router.get("/approvetweetslist", async(req,res)=>{
+  try {
+      const tweets = await connection.query("SELECT * FROM datasave");
+
+      res.json(tweets.rows);
+
+    } catch (err) {
+      console.error(err.message);
+      res.status(500).send("Server error");
+    }
+})
+
+
+router.get("/registereduserlist", async(req,res)=>{
+  try {
+
+      const logins = await connection.query("SELECT user_name,user_email,role FROM logins");
+
+      
+      res.json(logins.rows);
+    } catch (err) {
+      console.error(err.message);
+      res.status(500).send("Server error");
+    }
+})
+
+
+router.post("/remove_data_save", async (req, res) => {
+
+  const { id } = req.body;
+
+  try {
+
+
+    let createJSON = await connection.query(
+      "DELETE FROM datasave WHERE id = $1",
+      [id]
+    );
+    return res.json(createJSON.rowCount);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server error");
+  }
+});
+
 
 module.exports = router;

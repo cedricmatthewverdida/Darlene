@@ -4,11 +4,12 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _b73ba960 = () => interopDefault(import('..\\pages\\analytics.vue' /* webpackChunkName: "pages/analytics" */))
-const _6a477944 = () => interopDefault(import('..\\pages\\dashboard.vue' /* webpackChunkName: "pages/dashboard" */))
-const _0a5728a1 = () => interopDefault(import('..\\pages\\forecast.vue' /* webpackChunkName: "pages/forecast" */))
-const _8a620d6e = () => interopDefault(import('..\\pages\\register.vue' /* webpackChunkName: "pages/register" */))
-const _134b1b9c = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _e6e2c9e0 = () => interopDefault(import('..\\pages\\admin.vue' /* webpackChunkName: "pages/admin" */))
+const _46b5c347 = () => interopDefault(import('..\\pages\\analytics.vue' /* webpackChunkName: "pages/analytics" */))
+const _6d2fdb55 = () => interopDefault(import('..\\pages\\dashboard.vue' /* webpackChunkName: "pages/dashboard" */))
+const _5475946c = () => interopDefault(import('..\\pages\\forecast.vue' /* webpackChunkName: "pages/forecast" */))
+const _f385f31c = () => interopDefault(import('..\\pages\\register.vue' /* webpackChunkName: "pages/register" */))
+const _5b1f4713 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -22,24 +23,28 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/admin",
+    component: _e6e2c9e0,
+    name: "admin"
+  }, {
     path: "/analytics",
-    component: _b73ba960,
+    component: _46b5c347,
     name: "analytics"
   }, {
     path: "/dashboard",
-    component: _6a477944,
+    component: _6d2fdb55,
     name: "dashboard"
   }, {
     path: "/forecast",
-    component: _0a5728a1,
+    component: _5475946c,
     name: "forecast"
   }, {
     path: "/register",
-    component: _8a620d6e,
+    component: _f385f31c,
     name: "register"
   }, {
     path: "/",
-    component: _134b1b9c,
+    component: _5b1f4713,
     name: "index"
   }],
 

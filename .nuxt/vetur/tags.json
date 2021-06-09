@@ -1,6 +1,18 @@
 {
+  "Adminrole": {
+    "description": "Auto imported from components/adminrole.vue"
+  },
+  "Approvetweet": {
+    "description": "Auto imported from components/approvetweet.vue"
+  },
+  "BarChart": {
+    "description": "Auto imported from components/BarChart.js"
+  },
   "Logo": {
     "description": "Auto imported from components/Logo.vue"
+  },
+  "PieChart": {
+    "description": "Auto imported from components/PieChart.js"
   },
   "RegisterAuthForm": {
     "description": "Auto imported from components/RegisterAuthForm.vue"
@@ -16,6 +28,9 @@
   },
   "UserInfo": {
     "description": "Auto imported from components/userInfo.vue"
+  },
+  "Userrole": {
+    "description": "Auto imported from components/userrole.vue"
   },
   "VuetifyLogo": {
     "description": "Auto imported from components/VuetifyLogo.vue"
